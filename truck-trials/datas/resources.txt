@@ -1,0 +1,44 @@
+"keyboard.png", //0
+"bonus.snd", //0
+
+"background.jpg", //1
+"background2.png", //2
+"car_tyre_link1.png", //3
+"car_tyre_link2.png", //4
+"car_body_temp.png", //5
+"car_tyre.png", //6
+"car_tyre_light.png", //7
+"controls.png", //8
+"main_dec.png", //9
+"main_dec2.png", //10
+"particle_mud.png", //11
+"particle_grass.png", //12
+"cars_set1.png", //13
+"particle_smoke.png", //14
+"car_tyre2.png", //15
+"car_tyre_light2.png", //16
+"cars_set1_alt.png", //17
+"particle_barrel.png", //18
+"particle_boom.png", //19
+"particle_crunch.png", //20
+"planche.png", //21
+"particle_water.png", //22
+"particle_5.png", //23
+"particle_15.png", //24
+"particle_25.png", //25
+"wait.png", //26
+"bag.png", //27
+"shade.png", //28
+
+"crunch.snd", //1
+"bounce.snd", //2
+"outch.snd", //3
+"bomb.snd", //4
+"meters.snd", //5
+"mission.snd", //6
+"mission_done.snd", //7
+"engine_idle.snd", //8
+"engine_rev.snd", //9
+"engine_start.snd", //10
+
+

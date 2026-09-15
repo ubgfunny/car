@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Fire Truck | UBGFun</title>
+	<meta name="robots" content="noindex,nofollow" />
+<script src="https://ubgfun.github.io/resource/scripts/main.js"></script>
+
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="" data-original="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="no" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="no" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+
+        <script>
+            // Package-ID
+            window.famobi_gameID = "fire-truck";
+            window.famobi_gameJS = ['js/all.js',
+            	function(){
+
+	            	// Size the canvas to fill the browser viewport.
+	            	jQuery(window).resize(function() {
+	            		cr_sizeCanvas(jQuery(window).width(), jQuery(window).height());
+	            	});
+
+	            	// Pause and resume on page becoming visible/invisible
+	            	function onVisibilityChanged() {
+	            		if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+	            			cr_setSuspended(true);
+	            		else
+	            			cr_setSuspended(false);
+	            	};
+
+	            	document.addEventListener("visibilitychange", onVisibilityChanged, false);
+	            	document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+	            	document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+	            	document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+
+	            	// Create new runtime using the c2canvas
+	            	cr_createRuntime("c2canvas");
+            	}
+            ];
+
+            (function (document, url, fgJS, firstJS) {
+                    fgJS = document.createElement('script');
+                    firstJS = document.getElementsByTagName('script')[0];
+                    fgJS.src = url + encodeURIComponent(document.location.href);
+                    firstJS.parentNode.insertBefore(fgJS, firstJS);
+            })(document, 'js/start.js?e=');
+
+        </script>
+	<meta property="og:image" content="fire-truck.png" />
+</head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="384" height="600">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>
+				The challenge in this new puzzle game is to move the cars and trucks so the fire truck is free to leave the parking lot. This puzzle game gets more difficult with every level, but with logical thinking all fans of riddles and puzzles will master this Fire Truck puzzle game!
+				<br /><br />
+				Bei diesem Schiebespiel besteht die Challenge darin, die Autos und Trucks so zu verschieben, dass das Feuerwehrauto genug Platz hat um zu seinem Löscheinsatz zu fahren. Das Puzzle wird mit jedem neuen Level immer kniffliger, doch mit einer gehörigen Portion Logik wird jeder Rätselfan Fire Truck meistern!
+			</h1>
+		</canvas>
+
+	</div>
+</body>
+</html>
